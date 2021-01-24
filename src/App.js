@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import BarraNav from './components/barra_nav'
+import Enero from './components/enero_2021'
+import Febrero from './components/febrero_2021'
+import Marzo from './components/marzo_2021'
+import Abril from './components/abril_2021'
+import Mayo from './components/mayo_2021'
+import Junio from './components/junio_2021'
+import Julio from './components/julio_2021'
+import Agosto from './components/agosto_2021'
+import Septiembre from './components/septiembre_2021'
+import Octubre from './components/octubre_2021'
+import Noviembre from './components/noviembre_2021'
+import Diciembre from './components/diciembre_2021'
+import Footer from './components/footer'
+
 
 function App() {
+
+  const [dato, saveDato ] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BarraNav saveDato = {saveDato}/>
+      <div>
+        <Enero />
+        <Febrero />
+        <Marzo />
+        <Abril />
+        <Mayo />
+        <Junio />
+        <Julio />
+        <Agosto />
+        <Septiembre />
+        <Octubre />
+        <Noviembre />
+        <Diciembre />
+      </div>
+      <Footer dato={dato}/>
+    </>
   );
 }
 
