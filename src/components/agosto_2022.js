@@ -13,7 +13,7 @@ const Cal = styled.div`
 const HeaderCal = styled.div`
   cursor:default; 
   background: #cd310d; 
-  background: linear-gradient(top, #b32b0c, #cd310d); 
+  background: black; 
   height: 34px; 
   position: relative; 
   color:#fff;
@@ -70,11 +70,11 @@ const DaysNumber = styled.td`
   position:relative; 
 `
 
-const Febrero = () => {
+const Agosto = () => {
   return ( 
     <Cal>
       <HeaderCal>
-        <TitleMonth> Febrero 2021 </TitleMonth> 
+        <TitleMonth> Agosto 2022 </TitleMonth> 
       </HeaderCal>
       <TableDays>
         <tbody>
@@ -94,9 +94,9 @@ const Febrero = () => {
           <tbody> 
             <tr><DaysNumber></DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>1</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>2</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>3</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>4</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>5</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>6</DaysNumber></tr> 
             <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>7</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>8</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>9</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>10</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>11</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>12</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>13</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>14</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>15</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>16</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>19</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>20</DaysNumber></tr> 
+            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>14</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>15</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>16</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>19</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>20</DaysNumber></tr> 
             <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>21</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>22</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>23</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>24</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>25</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>26</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>27</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>28</DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber></tr>
+            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>28</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>29</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>30</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>31</DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber></tr>
           </tbody> 
         </Curr>
       </CalFrame>
@@ -104,4 +104,4 @@ const Febrero = () => {
    );
 }
  
-export default Febrero;
+export default Agosto;

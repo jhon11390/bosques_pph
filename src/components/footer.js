@@ -11,7 +11,7 @@ const FooterPages = styled.footer`
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
-  background-color: #6c537e;
+  background-color: black;
 `
 const ColorsTurnos = styled.div`
   width: 80px;
@@ -56,7 +56,7 @@ const Footer = ({dato}) => {
     days.push("Descanso")
     days.push("Dia")
     days.push("Noche")
-  } else if(prueba==="Jose Matoma"){
+  } else if(prueba==="Por determinar"){
     days.push("Dia")
     days.push("Noche")
     days.push("Descanso")

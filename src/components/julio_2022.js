@@ -13,7 +13,7 @@ const Cal = styled.div`
 const HeaderCal = styled.div`
   cursor:default; 
   background: #cd310d; 
-  background: linear-gradient(top, #b32b0c, #cd310d); 
+  background: black; 
   height: 34px; 
   position: relative; 
   color:#fff;
@@ -70,11 +70,11 @@ const DaysNumber = styled.td`
   position:relative; 
 `
 
-const Enero = () => {
+const Julio = () => {
   return ( 
     <Cal>
       <HeaderCal>
-        <TitleMonth> Enero 2021 </TitleMonth> 
+        <TitleMonth> Julio 2022 </TitleMonth> 
       </HeaderCal>
       <TableDays>
         <tbody>
@@ -92,10 +92,10 @@ const Enero = () => {
       <CalFrame>
         <Curr> 
           <tbody> 
-            <tr><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: "yellow"}}>1</DaysNumber><DaysNumber style={{backgroundColor: "yellow"}}>2</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>3</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>4</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>5</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>6</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>7</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>8</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>9</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>10</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>11</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>12</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>13</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>14</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>15</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>16</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>19</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>20</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>21</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>22</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>23</DaysNumber></tr> 
+            <tr><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>1</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>2</DaysNumber></tr> 
+            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>3</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>4</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>5</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>6</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>7</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>8</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>9</DaysNumber></tr> 
+            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>10</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>11</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>12</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>13</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>14</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>15</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>16</DaysNumber></tr> 
+            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>19</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>20</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>21</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>22</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>23</DaysNumber></tr> 
             <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>24</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>25</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>26</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>27</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>28</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>29</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>30</DaysNumber></tr>
             <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>31</DaysNumber></tr>
           </tbody> 
@@ -105,4 +105,4 @@ const Enero = () => {
    );
 }
  
-export default Enero;
+export default Julio;

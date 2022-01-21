@@ -11,7 +11,7 @@ const NavBarra = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #300047;
+  background-color: black;
   color: white;
 `
 const Title = styled.h3`
@@ -23,14 +23,14 @@ const SelectGurda = styled.select`
 `
 
 const BarraNav = ({saveDato}) => {
-  const [addrtype] = useState(["Seleccione su nombre","Miguel Martin", "Jhon Ortega", "Jose Matoma"])
+  const [addrtype] = useState(["Seleccione su nombre","Miguel Martin", "Jhon Ortega", "Por determinar"])
   const Add = addrtype.map(Add => Add
   )
   const handleAddrTypeChange = (e) => saveDato(((addrtype[e.target.value])))
 
   return ( 
     <NavBarra>
-      <Title>Calendario 2021</Title>
+      <Title>Calendario 2022</Title>
       < SelectGurda
         onChange={e => handleAddrTypeChange(e)} >
         {
