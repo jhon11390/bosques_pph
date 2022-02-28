@@ -11,7 +11,7 @@ const FooterPages = styled.footer`
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
-  background-color: black;
+  background-color: rgb(33, 37, 41);
 `
 const ColorsTurnos = styled.div`
   width: 80px;
@@ -56,11 +56,15 @@ const Footer = ({dato}) => {
     days.push("Descanso")
     days.push("Dia")
     days.push("Noche")
-  } else if(prueba==="Por determinar"){
+  } else if(prueba==="Vigilante 3"){
     days.push("Dia")
     days.push("Noche")
     days.push("Descanso")
-  } else {
+  } else if(prueba==="Recorredor"){
+    days.push("0")
+    days.push("Descanso")
+    days.push("0")
+  }else {
     days.push("0")
     days.push("0")
     days.push("0")

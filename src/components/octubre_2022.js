@@ -23,7 +23,7 @@ const HeaderCal = styled.div`
   text-shadow:0px -1px 0 #87260C; 
   text-transform: uppercase; 
 `
-const TitleMonth = styled.h3`
+const TitleMonth = styled.h6`
   display: flex;
   justify-content: center;
   padding-top: 3%;
@@ -70,7 +70,7 @@ const DaysNumber = styled.td`
   position:relative; 
 `
 
-const Octubre = () => {
+const Octubre = ({guarda}) => {
   return ( 
     <Cal>
       <HeaderCal>
@@ -91,14 +91,27 @@ const Octubre = () => {
       </TableDays>
       <CalFrame>
         <Curr> 
-          <tbody> 
-            <tr><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>1</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>2</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>3</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>4</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>5</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>6</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>7</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>8</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>9</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>10</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>11</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>12</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>13</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>14</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>15</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>16</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>19</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>20</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>21</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>22</DaysNumber></tr> 
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>23</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>24</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>25</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>26</DaysNumber><DaysNumber  style={{backgroundColor: 'yellowgreen'}}>27</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>28</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>29</DaysNumber></tr>
-            <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>30</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>31</DaysNumber></tr>
-          </tbody> 
+          {
+            guarda === 'Recorredor' ?
+            <tbody> 
+              <tr><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>1</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'white'}}>2</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>3</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>4</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>5</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>6</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>7</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>8</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>9</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>10</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>11</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>12</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>13</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>14</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>15</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'white'}}>16</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>19</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>20</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>21</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>22</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'white'}}>23</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>24</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>25</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>26</DaysNumber><DaysNumber  style={{backgroundColor: 'white'}}>27</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>28</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>29</DaysNumber></tr>
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'white'}}>30</DaysNumber><DaysNumber style={{backgroundColor: 'white'}}>31</DaysNumber></tr>
+            </tbody> 
+            :
+            <tbody> 
+              <tr><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber></DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>1</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'pink'}}>2</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>3</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>4</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>5</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>6</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>7</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>8</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>9</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>10</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>11</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>12</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>13</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>14</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>15</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellowgreen'}}>16</DaysNumber><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>17</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>18</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>19</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>20</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>21</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>22</DaysNumber></tr> 
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>23</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>24</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>25</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>26</DaysNumber><DaysNumber  style={{backgroundColor: 'yellowgreen'}}>27</DaysNumber><DaysNumber style={{backgroundColor: 'yellowgreen'}}>28</DaysNumber><DaysNumber style={{backgroundColor: 'yellow'}}>29</DaysNumber></tr>
+              <tr><DaysNumber style={{border: '2px solid red', backgroundColor: 'yellow'}}>30</DaysNumber><DaysNumber style={{backgroundColor: 'pink'}}>31</DaysNumber></tr>
+            </tbody> 
+          }
+          
         </Curr>
       </CalFrame>
     </Cal>
