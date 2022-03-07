@@ -1,50 +1,40 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 
-const NavBarra = styled.nav`
-  width: 100%;
-  height: 60px;
-  
-  top: 0;
-  background-color: white;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: white;
-`
-const Title = styled.h3`
-  padding: 10px;
-`
-const SelectGurda = styled.select`
-  font-weight: 1000;
-  width: 50%;
-`
-
 const BarraNav = () => {
+
+  const contenedorDiv = document.querySelector('#navbarNavDropdown');
+
+  function showDiv () {
+    if(contenedorDiv.classList.contains('show')){
+      
+      contenedorDiv.classList.remove('show');
+
+    }
+    
+  }
+  
   
   return (
-    <div>
+    <div style={{position: 'fixed', width: '100%', zIndex: 10}}>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src="logo192.png"  width="50" height="44" alt="imagen bosques 3" />
-          </a>
+          <Link className="navbar-brand" to="/" onClick={() => showDiv()}>
+            <img src="logo192.png"  width="60" height="54" alt="imagen bosques 3" />
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
+            <ul className="nav navbar-nav">
+              <li className="nav-item" onClick={() => showDiv()}>
                 <Link to="/" className="nav-link active" aria-current="page">Horarios 2022</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => showDiv()}>
                 <Link to="/vehiculos" className="nav-link" aria-current="page">Vehiculos</Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={() => showDiv()}>
                 <Link to="/empleadas" className="nav-link" aria-current="page">Empleadas</Link>
               </li>
               {/* <li className="nav-item dropdown">

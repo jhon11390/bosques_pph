@@ -1,6 +1,6 @@
 const Empleadas = () => {
   return ( 
-    <>
+    <div style={{paddingTop: "100px"}}>
       <table className="table">
         <thead>
         <tr>
@@ -157,7 +157,7 @@ const Empleadas = () => {
         </tr>
         </tbody>
       </table>
-    </>
+    </div>
    )
 }
  

@@ -1,7 +1,7 @@
 const Vehiculos = () => {
   return ( 
     <>
-      <div>
+      <div style={{paddingTop: "82px"}}>
         <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
@@ -309,7 +309,7 @@ const Vehiculos = () => {
                     <tr>
                       <td>FPO-455</td>
                       <td>AUDI</td>
-                      <td>AUDI</td>
+                      <td>S3</td>
                     </tr>
                     <tr>
                       <th scope="row" rowSpan="3" className="text-center">21</th>
@@ -521,7 +521,7 @@ const Vehiculos = () => {
                       <th scope="row" className="text-center">20</th>
                       <td>FPO-455</td>
                       <td>AUDI</td>
-                      <td>AUDI</td>
+                      <td>S3</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-center">5</th>
@@ -898,7 +898,7 @@ const Vehiculos = () => {
                       <th scope="row" className="text-center">20</th>
                       <td>455-FPO</td>
                       <td>AUDI</td>
-                      <td>AUDI</td>
+                      <td>S3</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-center">8</th>

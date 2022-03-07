@@ -56,7 +56,7 @@ const Footer = ({dato}) => {
     days.push("Descanso")
     days.push("Dia")
     days.push("Noche")
-  } else if(prueba==="Vigilante 3"){
+  } else if(prueba==="Hermes Parra"){
     days.push("Dia")
     days.push("Noche")
     days.push("Descanso")
