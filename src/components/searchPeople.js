@@ -31,7 +31,7 @@ const SearchPeople = ({saveDato}) => {
   const handleAddrTypeChange = (e) => saveDato(((addrtype[e.target.value])))
 
   return (
-    <div>
+    <div style={{position: 'fixed', width: '100%', zIndex: 2, top: 0}}>
       <NavBarra>
         <Title></Title>
         < SelectGurda className="form-select form-select-sm" aria-label=".form-select-sm example"

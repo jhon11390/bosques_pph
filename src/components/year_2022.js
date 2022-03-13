@@ -22,7 +22,7 @@ function Year_2022() {
   return (
     <>
       <SearchPeople saveDato = {saveDato}/>
-      <div>
+      <div style={{marginTop: '170px'}}>
         <Enero guarda = {dato}/>
         <Febrero guarda = {dato}/>
         <Marzo guarda = {dato}/>

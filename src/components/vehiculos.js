@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 const Vehiculos = () => {
+
+  
+  const [vehiculo, setVehiculo] = useState([])
+  
+  
+
+
   return ( 
     <>
       <div style={{paddingTop: "82px"}}>
@@ -21,29 +30,29 @@ const Vehiculos = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['fortuner.webp', 'Ford Limited', 'IYN-407'])}>
                       <th scope="row" rowSpan="2" className="text-center">1</th>
                       <td>IYN-407</td>
                       <td>FORD</td>
                       <td>LIMITED</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['escape.webp', 'Ford Escape', 'KAL-052'])}>
                       <td>KAL-052</td>
                       <td>FORD</td>
                       <td>ESCAPE XLT</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['toyota-cross.webp', 'Toyota Cross', 'JWX-406'])}>
                       <th scope="row" rowSpan="3" className="text-center">2</th>
                       <td>JWX-406</td>
                       <td>TOYOTA</td>
                       <td>CROSS</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['captiva.jpg', 'Chevrolet Captiva', 'RLZ-267'])}>
                       <td>RLZ-267</td>
                       <td>CHEVROLET</td>
                       <td>CAPTIVA</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['mg-mg3.webp', 'MG MG3', 'HTK-540'])}>
                       <td>HTK-540</td>
                       <td>MG</td>
                       <td>MG3</td>
@@ -1096,6 +1105,25 @@ const Vehiculos = () => {
                 </table>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="staticBackdropLabel">{vehiculo[1]}</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body text-center">
+                <img src={vehiculo[0]} width="300" alt={vehiculo[1]}/>
+              </div>
+              <div className="modal-body text-center">
+                <h1><strong>{vehiculo[2]}</strong></h1>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
           </div>
         </div>
       </div>
