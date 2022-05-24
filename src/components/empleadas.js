@@ -31,9 +31,9 @@ const Empleadas = () => {
         </tr>
         <tr>
           <th scope="row" className="text-center">4</th>
-          <td>Sin empleada</td>
-          <td>0</td>
-          <td>No aplica</td>
+          <td>Yenny Espinosa</td>
+          <td>1.056.798.473</td>
+          <td>Por dias</td>
         </tr>
         <tr>
           <th scope="row" className="text-center">5</th>
@@ -79,8 +79,8 @@ const Empleadas = () => {
         </tr>
         <tr>
           <th scope="row" className="text-center">11</th>
-          <td>Maria</td>
-          <td>0</td>
+          <td>Maria Cortes</td>
+          <td>42.106.565</td>
           <td>Por dias</td>
         </tr>
         <tr>
@@ -92,7 +92,7 @@ const Empleadas = () => {
         <tr>
           <th scope="row" className="text-center">13</th>
           <td>Yolis Marquez</td>
-          <td>0</td>
+          <td>39.012.267</td>
           <td>Por dias</td>
         </tr>
         <tr>
@@ -115,9 +115,9 @@ const Empleadas = () => {
         </tr>
         <tr>
           <th scope="row" className="text-center">17</th>
-          <td>Ruby Linares</td>
-          <td>52.100.568</td>
-          <td>Por dias</td>
+          <td>Sin empleada</td>
+          <td>0</td>
+          <td>No aplica</td>
         </tr>
         <tr>
           <th scope="row" className="text-center">18</th>

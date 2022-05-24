@@ -1,0 +1,51 @@
+{
+  "bosques_de_gratamira_3": [
+    {
+      "id": 1,
+      "residentes": [
+        {
+          "nombre": "nombre de residente"
+        },
+        {
+          "nombre": "nombre de residente"
+        }
+      ],
+      "vehiculos": [
+        {
+          "marca": "Renault",
+          "modelo": "Captur",
+          "color": "blanco",
+          "numero": 123,
+          "codigoLetras": "ABC"
+        },
+        {
+          "marca": "Renault",
+          "modelo": "Captur",
+          "color": "blanco",
+          "numero": 123,
+          "codigoLetras": "ABC"
+        }
+      ],
+      "empleadas": [
+        {
+          "nombre": "Nombre de empleada",
+          "cedula": "12.123.122"
+        }
+      ],
+      "bicicletas": [
+        {
+          "marca": "gw",
+          "color": "blanco",
+          "numeroMarca": "1232"
+        }
+      ],
+      "mascotas": [
+        {
+          "nombre": "firulais",
+          "raza": "criollo",
+          "clase": "perro"
+        }
+      ]
+    }
+  ]
+}

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const BarraNav = () => {
 
-  
-  
-  
+  const closeMenu = (e)=> {
+    e.target.parentElement.parentElement.parentElement.classList.remove("show")
+  }
   return (
     <div style={{position: 'fixed', width: '100%', zIndex: 10, top: 0}}>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
@@ -19,13 +19,13 @@ const BarraNav = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="nav navbar-nav">
-              <li className="nav-item" >
+              <li className="nav-item" onClick={closeMenu}>
                 <Link to="/" className="nav-link active" aria-current="page">Horarios 2022</Link>
               </li>
-              <li className="nav-item" >
+              <li className="nav-item" onClick={closeMenu}>
                 <Link to="/vehiculos" className="nav-link" aria-current="page">Vehiculos</Link>
               </li>
-              <li className="nav-item" >
+              <li className="nav-item" onClick={closeMenu}>
                 <Link to="/empleadas" className="nav-link" aria-current="page">Empleadas</Link>
               </li>
               {/* <li className="nav-item dropdown">

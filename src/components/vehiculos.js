@@ -41,13 +41,8 @@ const Vehiculos = () => {
                       <td>FORD</td>
                       <td>ESCAPE XLT</td>
                     </tr>
-                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['toyota-cross.webp', 'Toyota Cross', 'JWX-406'])}>
-                      <th scope="row" rowSpan="3" className="text-center">2</th>
-                      <td>JWX-406</td>
-                      <td>TOYOTA</td>
-                      <td>CROSS</td>
-                    </tr>
-                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['captiva.jpg', 'Chevrolet Captiva', 'RLZ-267'])}>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['captiva.jpg', 'Toyota Cross', 'JWX-406'])}>
+                      <th scope="row" rowSpan="2" className="text-center">2</th>
                       <td>RLZ-267</td>
                       <td>CHEVROLET</td>
                       <td>CAPTIVA</td>
@@ -58,168 +53,168 @@ const Vehiculos = () => {
                       <td>MG3</td>
                     </tr>
                     <tr>
-                      <th scope="row" className="text-center">3</th>
+                      <th scope="row" className="text-center" >3</th>
                       <td>No aplica</td>
                       <td>No aplica</td>
                       <td>No aplica</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['escape4.jpg', 'Ford Escape', 'CYD-443'])}>
                       <th scope="row" rowSpan="3" className="text-center">4</th>
                       <td>CYD-443</td>
                       <td>FORD</td>
                       <td>ESCAPE XLT</td>
                     </tr>
-                    <tr>
+                    <tr  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['sparkgt.jpg', 'Chevrolet Spark Gt', 'NCW-508'])}>
                       <td>NCW-508</td>
                       <td>CHEVROLET</td>
                       <td>SPARK GT</td>
                     </tr>
-                    <tr>
+                    <tr  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['logan.jpg', 'Renault Logan', 'CVT-828'])}>
                       <td>CVT-828</td>
                       <td>RENAULT</td>
                       <td>LOGAN</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['mazdacx-9.webp', 'Mazda Cx-9', 'EJO-565'])}>
                       <th scope="row" rowSpan="4" className="text-center">5</th>
                       <td>EJO-565</td>
                       <td>MAZDA</td>
                       <td>CX-9</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['mazdacx-5.jpg', 'Mazda Cx-5', 'HSR-051'])}>
                       <td>HSR-051</td>
                       <td>MAZDA</td>
                       <td>CX-5</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['audia4.jpg', 'Audi A4', 'RNT-628'])}>
                       <td>RNT-628</td>
                       <td>AUDI</td>
                       <td>A4</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['coopers.webp', 'Mini Cooper CooperS', 'FPV-762'])}>
                       <td>FPV-762</td>
                       <td>MINI-COOPER</td>
                       <td>COOPER-S</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['equinox.jpg', 'Chevrolet Equinox', 'EJV-347'])}>
                       <th scope="row" rowSpan="3" className="text-center">6</th>
                       <td>EJV-347</td>
                       <td>CHEVROLET</td>
                       <td>EQUINOX</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['zoe.jpg', 'Renault Zoe', 'FYS-087'])}>
                       <td>FYS-087</td>
                       <td>RENAULT</td>
                       <td>ZOE</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['volvo.jpeg', 'Volvo V40 T4', 'GMY-424'])}>
                       <td>GMY-424</td>
                       <td>VOLVO</td>
                       <td>V40 T4</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['vwgolf.jpg', 'VW Golf', 'BNT-052'])}>
                       <th scope="row" rowSpan="4" className="text-center">7</th>
                       <td>BNT-052</td>
                       <td>VW</td>
                       <td>GOLF</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['vwgolf2.jpg', 'VW Golf', 'UBX-410'])}>
                       <td>UBX-410</td>
                       <td>VW</td>
                       <td>GOLF</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['nissanmarch.webp', 'Nissan March', 'HSW-227'])}>
                       <td>HSW-227</td>
                       <td>NISSAN</td>
                       <td>MARCH</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['vwjetta.webp', 'VW Jetta', 'CZN-529'])}>
                       <td>CZN-529</td>
                       <td>VW</td>
                       <td>JETTA</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['trail_blazer.jpg', 'Chevrolet TrailBlazer', 'BRM-384'])}>
                       <th scope="row" rowSpan="2" className="text-center">8</th>
                       <td>BRM-384</td>
                       <td>CHEVROLET</td>
                       <td>TRAILBLAZER</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['toyota_4runner.jpg', 'Toyota 4Runner', 'BMP-470'])}>
                       <td>BMP-470</td>
                       <td>TOYOTA</td>
                       <td>4RUNNER</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['mazda_allegro.jpg', 'Mazda Allegro HB', 'BTF-003'])}>
                       <th scope="row" rowSpan="3" className="text-center">9</th>
                       <td>BTF-003</td>
                       <td>MAZDA</td>
                       <td>ALLEGRO HB</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['hyundai_elantra.jpg', 'Hyundai Elantra', 'BHN-670'])}>
                       <td>BHN-670</td>
                       <td>HYUNDAI</td>
                       <td>ELANTRA</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['nissan_march.jpg', 'Nissan March', 'JDM-804'])}>
                       <td>JDM-804</td>
                       <td>NISSAN</td>
                       <td>MARCH</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['mazda_cx5_cafe.webp', 'Mazda CX-5', 'DMZ-550'])}>
                       <th scope="row" rowSpan="4" className="text-center">10</th>
                       <td>DMZ-550</td>
                       <td>MAZDA</td>
                       <td>CX-5</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['ford_escape_se.jpg', 'Ford Escape-SE', 'UBO-480'])}>
                       <td>UBO-480</td>
                       <td>FORD</td>
                       <td>ESCAPE SE</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['ford_escape_xlt.jpg', 'Ford Escape-XLT', 'RKV-027'])}>
                       <td>RKV-027</td>
                       <td>FORD</td>
                       <td>ESCAPE XLT</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['renault_duster.webp', 'Renault Duster', 'FNW-886'])}>
                       <td>FNW-886</td>
                       <td>RENAULT</td>
                       <td>DUSTER</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['nissan_x_trail.jpg', 'Nissan Xtrail', 'ZYW-130'])}>
                       <th scope="row" rowSpan="2" className="text-center">11</th>
                       <td>ZYW-130</td>
                       <td>NISSAN</td>
                       <td>X-TRAIL</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['ford_fiesta.webp', 'Ford Fiesta', 'MPX-625'])}>
                       <td>MPX-625</td>
                       <td>FORD</td>
                       <td>FIESTA</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['honda_crv.webp', 'Honda CR-V', 'RZO-857'])}>
                       <th scope="row" rowSpan="2" className="text-center">12</th>
                       <td>RZO-857</td>
                       <td>HONDA</td>
                       <td>CR-V</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['honda_integra.jpg', 'Honda Integra', 'BCB-174'])}>
                       <td>BCB-174</td>
                       <td>HONDA</td>
                       <td>INTEGRA</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['chevrolet_beat.webp', 'Chevrolet Beat Premier', 'FZX-673'])}>
                       <th scope="row" rowSpan="2" className="text-center">13</th>
                       <td>FZX-673</td>
                       <td>CHEVROLET</td>
                       <td>BEAT PREMIER</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['citroen_saxo.webp', 'Citroen Saxo', 'BJN-262'])}>
                       <td>BJN-262</td>
                       <td>CITROEN</td>
                       <td>SAXO</td>
                     </tr>
                     <tr>
-                      <th scope="row" rowSpan="4" className="text-center">14</th>
+                      <th scope="row" rowSpan="5" className="text-center">14</th>
                       <td>FYT-177</td>
                       <td>TOYOTA</td>
                       <td>HILUX</td>
@@ -228,6 +223,11 @@ const Vehiculos = () => {
                       <td>IWY-681</td>
                       <td>FORD</td>
                       <td>ESCAPE</td>
+                    </tr>
+                    <tr>
+                      <td>EFN-488</td>
+                      <td>NISSAN</td>
+                      <td>X-TRAIL</td>
                     </tr>
                     <tr>
                       <td>ENU-596</td>
@@ -300,9 +300,9 @@ const Vehiculos = () => {
                       <td>323i</td>
                     </tr>
                     <tr>
-                      <td>DDD-520</td>
-                      <td>BMW</td>
-                      <td>ESCAPE</td>
+                      <td>RGN-634</td>
+                      <td>RENAULT</td>
+                      <td>SCALA</td>
                     </tr>
                     <tr>
                       <th scope="row" rowSpan="3" className="text-center">20</th>
@@ -473,12 +473,6 @@ const Vehiculos = () => {
                       <td>JETTA</td>
                     </tr>
                     <tr>
-                      <th scope="row" className="text-center">19</th>
-                      <td>DDD-520</td>
-                      <td>BMW</td>
-                      <td>ESCAPE</td>
-                    </tr>
-                    <tr>
                       <th scope="row" className="text-center">22</th>
                       <td>DDR-549</td>
                       <td>BMW</td>
@@ -495,6 +489,12 @@ const Vehiculos = () => {
                       <td>DOZ-645</td>
                       <td>BMW</td>
                       <td>X3</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="text-center">14</th>
+                      <td>EFN-488</td>
+                      <td>NISSAN</td>
+                      <td>X-TRAIL</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-center">5</th>
@@ -635,12 +635,6 @@ const Vehiculos = () => {
                       <td>MARCH</td>
                     </tr>
                     <tr>
-                      <th scope="row" className="text-center">2</th>
-                      <td>JWX-406</td>
-                      <td>TOYOTA</td>
-                      <td>CROSS</td>
-                    </tr>
-                    <tr>
                       <th scope="row" className="text-center">1</th>
                       <td>KAL-052</td>
                       <td>FORD</td>
@@ -663,6 +657,12 @@ const Vehiculos = () => {
                       <td>QFQ-707</td>
                       <td>TOYOTA</td>
                       <td>FORTUNER</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="text-center">19</th>
+                      <td>RGN-634</td>
+                      <td>RENAULT</td>
+                      <td>SCALA</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-center">10</th>
@@ -873,12 +873,12 @@ const Vehiculos = () => {
                       <td>CHEVROLET</td>
                       <td>TRAILBLAZER</td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                       <th scope="row" className="text-center">2</th>
                       <td>406-JWX</td>
                       <td>TOYOTA</td>
                       <td>CROSS</td>
-                    </tr>
+                    </tr> */}
                     <tr>
                       <th scope="row" className="text-center">1</th>
                       <td>407-IYN</td>
@@ -922,16 +922,16 @@ const Vehiculos = () => {
                       <td>ESCAPE SE</td>
                     </tr>
                     <tr>
+                      <th scope="row" className="text-center">14</th>
+                      <td>488-EFN</td>
+                      <td>NISSAN</td>
+                      <td>X-TRAIL</td>
+                    </tr>
+                    <tr>
                       <th scope="row" className="text-center">4</th>
                       <td>508-NCW</td>
                       <td>CHEVROLET</td>
                       <td>SPARK GT</td>
-                    </tr>
-                    <tr>
-                      <th scope="row" className="text-center">19</th>
-                      <td>520-DDD</td>
-                      <td>BMW</td>
-                      <td>ESCAPE</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-center">7</th>
@@ -992,6 +992,12 @@ const Vehiculos = () => {
                       <td>628-RNT</td>
                       <td>AUDI</td>
                       <td>A4</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="text-center">19</th>
+                      <td>634-RGN</td>
+                      <td>RENAULT</td>
+                      <td>SCALA</td>
                     </tr>
                     <tr>
                       <th scope="row" className="text-center">15</th>

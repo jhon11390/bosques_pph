@@ -2,13 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Cal = styled.div`
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow:0px 3px 3px rgba(0, 0, 0, 0.25); 
-  -webkit-box-shadow:0px 3px 3px rgba(0, 0, 0, 0.25); 
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:20px 20px 20px rgba(0, 0, 0, 0.75); 
+  -webkit-box-shadow:20px 20px 20px rgba(0, 0, 0, 0.75); 
   margin:50px auto; 
   font: 13px/1.5 "Helvetica Neue", Helvatica, Arial, san-serif; 
   display:table;
-  margin-bottom: 100px;
 `
 
 const HeaderCal = styled.div`

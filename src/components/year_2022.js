@@ -18,11 +18,21 @@ import Footer from './footer';
 function Year_2022() {
 
   const [dato, saveDato ] = useState('');
+  const diaHoy = new Date()
+  let mes = diaHoy.getMonth() * 300
+
+  document.addEventListener('DOMContentLoaded', () => {
+    window.scroll({
+      top: mes,
+      left: 100,
+      behavior: 'smooth'
+    });
+  })
 
   return (
     <>
       <SearchPeople saveDato = {saveDato}/>
-      <div style={{marginTop: '170px'}}>
+      <div style={{marginTop: '170px', marginBottom: '100px'}}>
         <Enero guarda = {dato}/>
         <Febrero guarda = {dato}/>
         <Marzo guarda = {dato}/>
