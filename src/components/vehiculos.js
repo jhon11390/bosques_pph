@@ -213,28 +213,28 @@ const Vehiculos = () => {
                       <td>CITROEN</td>
                       <td>SAXO</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['toyota_hilux.webp', 'Toyota Hilux', 'FYT-177'])}>
                       <th scope="row" rowSpan="5" className="text-center">14</th>
                       <td>FYT-177</td>
                       <td>TOYOTA</td>
                       <td>HILUX</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['for_escape14.jpg', 'Ford Escape', 'IWY-681'])}>
                       <td>IWY-681</td>
                       <td>FORD</td>
                       <td>ESCAPE</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['nissan_xtrail.jpg', 'Nissan X-Trail', 'EFN-488'])}>
                       <td>EFN-488</td>
                       <td>NISSAN</td>
                       <td>X-TRAIL</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['toyota_rav4.jpg', 'Toyota Rav4', 'ENU-596'])}>
                       <td>ENU-596</td>
                       <td>TOYOTA</td>
                       <td>RAV4</td>
                     </tr>
-                    <tr>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => setVehiculo(['tucson-hyundai.jpg', 'Hyundai Tucson', 'HMS-078'])}>
                       <td>HMS-078</td>
                       <td>HYUNDAI</td>
                       <td>TUCSON</td>

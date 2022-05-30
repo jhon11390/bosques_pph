@@ -2,9 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Cal = styled.div`
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow:20px 20px 20px rgba(0, 0, 0, 0.75); 
-  -webkit-box-shadow:20px 20px 20px rgba(0, 0, 0, 0.75); 
+  box-shadow: ${props => props.monthActive ? "30px 30px 30px rgba(255, 0, 0, 0.9)" : "20px 20px 20px rgba(0, 0, 0, 0.75)"};
+  -moz-box-shadow: ${props => props.monthActive ? "30px 30px 30px rgba(255, 0, 0, 0.9)" : "20px 20px 20px rgba(0, 0, 0, 0.75)"};
+  -webkit-box-shadow: ${props => props.monthActive ? "30px 30px 30px rgba(255, 0, 0, 0.9)" : "20px 20px 20px rgba(0, 0, 0, 0.75)"};
   margin:50px auto; 
   font: 13px/1.5 "Helvetica Neue", Helvatica, Arial, san-serif; 
   display:table;
@@ -70,9 +70,28 @@ const DaysNumber = styled.td`
   position:relative; 
 `
 
-const Noviembre = ({guarda}) => {
+const DayClound = styled.div`
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 10px;
+  width: 65px;
+  height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  & h1 {
+    font-size: x-large;
+    margin-top: 4px;
+  };
+  & p {
+    font-size: x-large;
+    font-weight: 900;
+  }
+`
+
+const Noviembre = ({guarda, stylesMonths, dayToday, monthToday}) => {
   return ( 
-    <Cal>
+    <Cal monthActive={stylesMonths}>
       <HeaderCal>
         <TitleMonth> Noviembre 2022 </TitleMonth> 
       </HeaderCal>
@@ -112,6 +131,13 @@ const Noviembre = ({guarda}) => {
           
         </Curr>
       </CalFrame>
+      {stylesMonths ? 
+        <DayClound>
+          <h1>{monthToday}</h1>
+          <p>{dayToday}</p>
+        </DayClound>  
+        : null
+      }
     </Cal>
    );
 }
