@@ -26,13 +26,13 @@ function Year_2022() {
   const month = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
   
 
-  document.addEventListener('DOMContentLoaded', () => {
-    window.scroll({
-      top: mes,
-      left: 100,
-      behavior: 'smooth'
-    });
-  })
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   window.scroll({
+  //     top: mes,
+  //     left: 100,
+  //     behavior: 'smooth'
+  //   });
+  // })
 
   useEffect(() => {
     const diaHoy = new Date()
@@ -80,5 +80,36 @@ function Year_2022() {
     
   );
 }
+
+
+const turnos = [{dia: "Hermes Parra", nocturno: "Miguel Martin"}, {dia: "Jhon Ortega", nocturno: "Hermes Parra"}, {dia: "Jhon Ortega", nocturno: "Hermes Parra"}, {dia: "Miguel Martin", nocturno: "Jhon Ortega"}, {dia: "Miguel Martin", nocturno: "Jhon Ortega"}, {dia: "Hermes Parra", nocturno: "Miguel Martin"}]
+
+function dia(numero) {
+if(numero <= 6){
+  return turnos[numero-1];
+}else {
+  if(numero % 6 === 0){
+    return turnos[(numero - ((Math.trunc(numero/6)-1) * 6)) - 1];
+  } else {
+    return turnos[(numero - (Math.trunc(numero/6) * 6)) - 1];
+  }
+}
+ 
+}
+
+function verGuarda(objeto) {
+  let hora = 12
+  if(hora >= 6 && hora <=17){
+    console.log(objeto.dia);
+  }else{
+    console.log(objeto.nocturno);
+  }
+}
+
+const prueba = dia(33)
+
+verGuarda(prueba)
+
+
 
 export default Year_2022;

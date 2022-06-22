@@ -1,7 +1,7 @@
 const Empleadas = () => {
   return ( 
     <div style={{paddingTop: "100px"}}>
-      <table className="table">
+      <table className="table small table-secondary">
         <thead>
         <tr>
           <th scope="col" className="text-center">Casa</th>

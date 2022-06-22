@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Link } from "react-router-dom";
+
 
 const FooterPages = styled.footer`
   width: 100%;
@@ -39,7 +41,7 @@ const ColorsTurnos3 = styled.div`
   height: 40px;
   background-color: pink;
   color: black;
-  text-shadow: 1px 1px 1px blue;
+  text-shadow: 1px 1px 1px black;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +53,19 @@ const MonthActive = styled.div`
   top: -70%;
   right: 5%;
 `
+
+const CarActive = styled.div`
+  position: absolute;
+  top: -150%;
+  right: 5%;
+`
+
+const MaidActive = styled.div`
+  position: absolute;
+  top: -230%;
+  right: 5%;
+`
+
 
 const Footer = ({dato, monthActual}) => {
   
@@ -86,6 +101,16 @@ const Footer = ({dato, monthActual}) => {
       <MonthActive type="button" className="btn btn-dark" onClick={monthActual}>
         <img src="planning.png" width="25" style={{filter: "invert(100%)"}} alt="imagen de boton"/>
       </MonthActive>
+      <CarActive type="button" className="btn btn-dark" >
+        <Link to="/vehiculos">
+          <img src="car.png" width="25" style={{filter: "invert(100%)"}} alt="imagen de boton"/>
+        </Link>  
+      </CarActive>
+      <MaidActive type="button" className="btn btn-dark">
+        <Link to="/empleadas">
+          <img src="cleaning-lady.png" width="25" style={{filter: "invert(100%)"}} alt="imagen de boton"/>
+        </Link>
+      </MaidActive>
       <ColorsTurnos>
         <img src={`${days[0].imagen}`} width="25" alt="imagen user" style={{paddingRight: "4px"}}/>
         {days[0].texto}
