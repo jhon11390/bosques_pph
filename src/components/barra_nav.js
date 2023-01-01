@@ -20,7 +20,7 @@ const BarraNav = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="nav navbar-nav">
               <li className="nav-item" onClick={closeMenu}>
-                <Link to="/" className="nav-link active" aria-current="page">Horarios 2022</Link>
+                <Link to="/" className="nav-link active" aria-current="page">Horarios 2023</Link>
               </li>
               <li className="nav-item" onClick={closeMenu}>
                 <Link to="/vehiculos" className="nav-link" aria-current="page">Vehiculos</Link>

@@ -71,15 +71,15 @@ const Footer = ({dato, monthActual}) => {
   
   const prueba = dato
   const days = [];
-  if(prueba==="Miguel Martin"){
+  if(prueba==="Jhon Ortega"){
     days.push({imagen: "moon.png", texto: "Noche"})
     days.push({imagen: "resting.png", texto: "Descanso"})
     days.push({imagen: "sun.png", texto: "Dia"})
-  } else if(prueba==="Jhon Ortega"){
-    days.push({imagen: "resting.png", texto: "Descanso"})
-    days.push({imagen: "sun.png", texto: "Dia"})
-    days.push({imagen: "moon.png", texto: "Noche"})
   } else if(prueba==="Hermes Parra"){
+    days.push({imagen: "resting.png", texto: "Descanso"})
+    days.push({imagen: "sun.png", texto: "Dia"})
+    days.push({imagen: "moon.png", texto: "Noche"})
+  } else if(prueba==="Miguel Martin"){
     days.push({imagen: "sun.png", texto: "Dia"})
     days.push({imagen: "moon.png", texto: "Noche"})
     days.push({imagen: "resting.png", texto: "Descanso"})
