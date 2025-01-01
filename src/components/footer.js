@@ -17,7 +17,7 @@ const FooterPages = styled.footer`
 const ColorsTurnos = styled.div`
   width: 110px;
   height: 40px;
-  background-color: yellowgreen;
+  background-color: #90EE90;
   color: black;
   text-shadow: 1px 1px 1px black;
   display:flex;
@@ -28,7 +28,7 @@ const ColorsTurnos = styled.div`
 const ColorsTurnos2 = styled.div`
   width: 110px;
   height: 40px;
-  background-color: yellow;
+  background-color: #FFE599;
   color: black;
   text-shadow: 1px 1px 1px black;
   display:flex;
@@ -39,7 +39,7 @@ const ColorsTurnos2 = styled.div`
 const ColorsTurnos3 = styled.div`
   width: 110px;
   height: 40px;
-  background-color: pink;
+  background-color: #ADD8E6;
   color: black;
   text-shadow: 1px 1px 1px black;
   display:flex;
@@ -75,7 +75,7 @@ const Footer = ({dato, monthActual}) => {
     days.push({imagen: "moon.png", texto: "Noche"})
     days.push({imagen: "resting.png", texto: "Descanso"})
     days.push({imagen: "sun.png", texto: "Dia"})
-  } else if(prueba==="Hermes Parra"){
+  } else if(prueba==="Pedro Diaz"){
     days.push({imagen: "resting.png", texto: "Descanso"})
     days.push({imagen: "sun.png", texto: "Dia"})
     days.push({imagen: "moon.png", texto: "Noche"})
@@ -98,19 +98,6 @@ const Footer = ({dato, monthActual}) => {
   
   return ( 
     <FooterPages>
-      <MonthActive type="button" className="btn btn-dark" onClick={monthActual}>
-        <img src="planning.png" width="25" style={{filter: "invert(100%)"}} alt="imagen de boton"/>
-      </MonthActive>
-      <CarActive type="button" className="btn btn-dark" >
-        <Link to="/vehiculos">
-          <img src="car.png" width="25" style={{filter: "invert(100%)"}} alt="imagen de boton"/>
-        </Link>  
-      </CarActive>
-      <MaidActive type="button" className="btn btn-dark">
-        <Link to="/empleadas">
-          <img src="cleaning-lady.png" width="25" style={{filter: "invert(100%)"}} alt="imagen de boton"/>
-        </Link>
-      </MaidActive>
       <ColorsTurnos>
         <img src={`${days[0].imagen}`} width="25" alt="imagen user" style={{paddingRight: "4px"}}/>
         {days[0].texto}
@@ -124,7 +111,7 @@ const Footer = ({dato, monthActual}) => {
         {days[2].texto}
       </ColorsTurnos3>
     </FooterPages>
-   );
+  );
 }
- 
+
 export default Footer;
