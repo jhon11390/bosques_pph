@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Link } from "react-router-dom";
-
 
 const FooterPages = styled.footer`
   width: 100%;
@@ -48,26 +46,7 @@ const ColorsTurnos3 = styled.div`
   border-radius: 10%;
 `
 
-const MonthActive = styled.div`
-  position: absolute;
-  top: -70%;
-  right: 5%;
-`
-
-const CarActive = styled.div`
-  position: absolute;
-  top: -150%;
-  right: 5%;
-`
-
-const MaidActive = styled.div`
-  position: absolute;
-  top: -230%;
-  right: 5%;
-`
-
-
-const Footer = ({dato, monthActual}) => {
+const Footer = ({ dato }) => {
   
   const prueba = dato
   const days = [];
