@@ -35,7 +35,7 @@ function Year_2022() {
       <SearchPeople saveDato = {saveDato}/>
       <div style={{marginTop: '170px', marginBottom: '100px'}}>
         <Month 
-          monthName="Enero" 
+          monthName="Enero 2025" 
           startDay={3}
           totalDays={31}
           initialColor="green"
@@ -43,7 +43,7 @@ function Year_2022() {
           specialDays={[1, 6]} 
         />
         <Month 
-          monthName="Febrero" 
+          monthName="Febrero 2025" 
           startDay={6}
           totalDays={28}
           initialColor="yellow"
@@ -51,7 +51,7 @@ function Year_2022() {
           specialDays={[]} 
         />
         <Month 
-          monthName="Marzo" 
+          monthName="Marzo 2025" 
           startDay={6}
           totalDays={31}
           initialColor="green"
@@ -59,7 +59,7 @@ function Year_2022() {
           specialDays={[24]} 
         />
         <Month 
-          monthName="Abril" 
+          monthName="Abril 2025" 
           startDay={2}
           totalDays={30}
           initialColor="green"
@@ -67,7 +67,7 @@ function Year_2022() {
           specialDays={[17, 18]} 
         />
         <Month 
-          monthName="Mayo" 
+          monthName="Mayo 2025" 
           startDay={4}
           totalDays={31}
           initialColor="green"
@@ -75,7 +75,7 @@ function Year_2022() {
           specialDays={[1]} 
         />
         <Month 
-          monthName="Junio" 
+          monthName="Junio 2025" 
           startDay={0}
           totalDays={30}
           initialColor="yellow"
@@ -83,7 +83,7 @@ function Year_2022() {
           specialDays={[2, 23, 30]} 
         />
         <Month 
-          monthName="Julio" 
+          monthName="Julio 2025" 
           startDay={2}
           totalDays={31}
           initialColor="yellow"
@@ -91,7 +91,7 @@ function Year_2022() {
           specialDays={[]} 
         />
         <Month 
-          monthName="Agosto" 
+          monthName="Agosto 2025" 
           startDay={5}
           totalDays={31}
           initialColor="yellow"
@@ -99,7 +99,7 @@ function Year_2022() {
           specialDays={[7, 18]} 
         />
         <Month 
-          monthName="Septiembre" 
+          monthName="Septiembre 2025" 
           startDay={1}
           totalDays={30}
           initialColor="blue"
@@ -107,7 +107,7 @@ function Year_2022() {
           specialDays={[]} 
         />
         <Month 
-          monthName="Octubre" 
+          monthName="Octubre 2025" 
           startDay={3}
           totalDays={31}
           initialColor="blue"
@@ -115,7 +115,7 @@ function Year_2022() {
           specialDays={[13]} 
         />
         <Month 
-          monthName="Noviembre" 
+          monthName="Noviembre 2025" 
           startDay={6}
           totalDays={30}
           initialColor="blue"
@@ -123,7 +123,7 @@ function Year_2022() {
           specialDays={[3, 17]} 
         />
         <Month 
-          monthName="Diciembre" 
+          monthName="Diciembre 2025" 
           startDay={1}
           totalDays={31}
           initialColor="blue"
