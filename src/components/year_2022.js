@@ -150,7 +150,7 @@ if(numero <= 6){
     return turnos[(numero - (Math.trunc(numero/6) * 6)) - 1];
   }
 }
- 
+
 }
 
 function verGuarda(objeto) {

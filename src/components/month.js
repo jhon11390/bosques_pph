@@ -1,5 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+`;
 
 const MonthContainer = styled.div`
   width: 100%;
@@ -7,6 +22,7 @@ const MonthContainer = styled.div`
   padding: 20px;
   margin: auto;
   font-family: 'Arial', sans-serif;
+  position: relative;
 `;
 
 const MonthHeader = styled.h2`
@@ -14,6 +30,21 @@ const MonthHeader = styled.h2`
   color: #333;
   margin-bottom: 20px;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  ${props => props.isCurrentMonth && css`
+    &::after {
+      content: '▶';
+      color: #0077ff;
+      font-size: 24px;
+      animation: ${pulse} 2s infinite;
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+  `}
 `;
 
 const WeekDaysGrid = styled.div`
@@ -57,8 +88,15 @@ const Day = styled.div`
   border: ${props => 
     (props.isSunday || props.hasSpecialBorder) && props.isCurrentMonth 
       ? '3px solid rgba(255, 0, 0, 0.9)' 
+      : props.isToday
+      ? '3px solid #0077ff'
       : 'none'
   };
+  
+  ${props => props.isToday && css`
+    animation: ${pulse} 2s infinite;
+    font-weight: bold;
+  `}
 
   &:hover {
     opacity: 0.8;
@@ -100,6 +138,30 @@ const Month = ({
     return colors[position];
   };
   
+  const isCurrentDate = (day) => {
+    const today = new Date();
+    const [monthStr, yearStr] = monthName.split(' ');
+    const currentMonth = today.getMonth();
+    const currentYear = today.getFullYear();
+    const currentDay = today.getDate();
+    
+    const monthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+                      'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    
+    return day === currentDay && 
+          monthNames[currentMonth] === monthStr && 
+          currentYear === parseInt(yearStr);
+  };
+
+  const isCurrentMonth = () => {
+    const today = new Date();
+    const [monthStr, yearStr] = monthName.split(' ');
+    const monthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+                      'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    return monthNames[today.getMonth()] === monthStr && 
+          today.getFullYear() === parseInt(yearStr);
+  };
+
   const generateDays = () => {
     const days = [];
     // Agregar espacios vacíos para el inicio del mes
@@ -117,6 +179,7 @@ const Month = ({
           colorPattern={getColorPattern(i-1)}
           isSunday={isSunday}
           hasSpecialBorder={specialDays.includes(i)}
+          isToday={isCurrentDate(i)}
         >
           {i}
         </Day>
@@ -128,7 +191,7 @@ const Month = ({
 
   return (
     <MonthContainer>
-      <MonthHeader>{monthName}</MonthHeader>
+      <MonthHeader isCurrentMonth={isCurrentMonth()}>{monthName}</MonthHeader>
       <WeekDaysGrid>
         {weekDays.map(day => (
           <WeekDay key={day}>{day}</WeekDay>
