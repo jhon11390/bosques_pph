@@ -35,99 +35,99 @@ function Year_2022() {
       <SearchPeople saveDato = {saveDato}/>
       <div style={{marginTop: '170px', marginBottom: '100px'}}>
         <Month 
-          monthName="Enero 2025" 
-          startDay={3}
-          totalDays={31}
-          initialColor="green"
-          initialDays={1}
-          specialDays={[1, 6]} 
-        />
-        <Month 
-          monthName="Febrero 2025" 
-          startDay={6}
-          totalDays={28}
-          initialColor="yellow"
-          initialDays={0}
-          specialDays={[]} 
-        />
-        <Month 
-          monthName="Marzo 2025" 
-          startDay={6}
-          totalDays={31}
-          initialColor="green"
-          initialDays={0}
-          specialDays={[24]} 
-        />
-        <Month 
-          monthName="Abril 2025" 
-          startDay={2}
-          totalDays={30}
-          initialColor="green"
-          initialDays={1}
-          specialDays={[17, 18]} 
-        />
-        <Month 
-          monthName="Mayo 2025" 
+          monthName="Enero 2026" 
           startDay={4}
           totalDays={31}
           initialColor="green"
-          initialDays={1}
-          specialDays={[1]} 
+          initialDays={0}
+          specialDays={[1, 12]} 
         />
         <Month 
-          monthName="Junio 2025" 
+          monthName="Febrero 2026" 
           startDay={0}
-          totalDays={30}
-          initialColor="yellow"
-          initialDays={0}
-          specialDays={[2, 23, 30]} 
-        />
-        <Month 
-          monthName="Julio 2025" 
-          startDay={2}
-          totalDays={31}
-          initialColor="yellow"
-          initialDays={0}
+          totalDays={28}
+          initialColor="green"
+          initialDays={1}
           specialDays={[]} 
         />
         <Month 
-          monthName="Agosto 2025" 
+          monthName="Marzo 2026" 
+          startDay={0}
+          totalDays={31}
+          initialColor="blue"
+          initialDays={1}
+          specialDays={[23]} 
+        />
+        <Month 
+          monthName="Abril 2026" 
+          startDay={3}
+          totalDays={30}
+          initialColor="green"
+          initialDays={0}
+          specialDays={[2, 3]} 
+        />
+        <Month 
+          monthName="Mayo 2026" 
           startDay={5}
           totalDays={31}
-          initialColor="yellow"
-          initialDays={1}
-          specialDays={[7, 18]} 
+          initialColor="green"
+          initialDays={0}
+          specialDays={[1, 18]} 
         />
         <Month 
-          monthName="Septiembre 2025" 
+          monthName="Junio 2026" 
           startDay={1}
           totalDays={30}
-          initialColor="blue"
+          initialColor="green"
+          initialDays={1}
+          specialDays={[8, 15, 29]} 
+        />
+        <Month 
+          monthName="Julio 2026" 
+          startDay={3}
+          totalDays={31}
+          initialColor="green"
+          initialDays={1}
+          specialDays={[20]} 
+        />
+        <Month 
+          monthName="Agosto 2026" 
+          startDay={6}
+          totalDays={31}
+          initialColor="yellow"
           initialDays={0}
+          specialDays={[7, 17]} 
+        />
+        <Month 
+          monthName="Septiembre 2026" 
+          startDay={2}
+          totalDays={30}
+          initialColor="yellow"
+          initialDays={1}
           specialDays={[]} 
         />
         <Month 
-          monthName="Octubre 2025" 
-          startDay={3}
+          monthName="Octubre 2026" 
+          startDay={4}
+          totalDays={31}
+          initialColor="yellow"
+          initialDays={1}
+          specialDays={[12]} 
+        />
+        <Month 
+          monthName="Noviembre 2026" 
+          startDay={0}
+          totalDays={30}
+          initialColor="blue"
+          initialDays={0}
+          specialDays={[2, 16]} 
+        />
+        <Month 
+          monthName="Diciembre 2026" 
+          startDay={2}
           totalDays={31}
           initialColor="blue"
           initialDays={0}
-          specialDays={[13]} 
-        />
-        <Month 
-          monthName="Noviembre 2025" 
-          startDay={6}
-          totalDays={30}
-          initialColor="blue"
-          initialDays={1}
-          specialDays={[3, 17]} 
-        />
-        <Month 
-          monthName="Diciembre 2025" 
-          startDay={1}
-          totalDays={31}
-          initialColor="blue"
-          initialDays={1}
           specialDays={[8, 25]} 
         />
       </div>
